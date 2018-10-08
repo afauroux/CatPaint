@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cat Paint</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+	<script src="script.js" defer></script>
+</head>
+
+<body onload="resizeCanvasToDisplaySize();">
+
+	<div class="maman">
+		<div class="row1" id="canvas-container">
+			<canvas id="mouloud">
+
+			</canvas>
+
+		</div>
+		<div class="row2">
+			<button class="btn-cat" id="btnclear" type="submit" onclick="clearCanvas()">
+				clear
+			</button>
+			<button class="btn-cat" id="btn1" type="submit" onclick="changeCat(0)">
+				<img src="img/black-cat.png">
+			</button>
+			<button class="btn-cat" id="btn2" type="submit" onclick="changeCat(1)">
+				<img src="img/blue-cat.png">
+			</button>
+			<button class="btn-cat" id="btn3" type="submit" onclick="changeCat(2)">
+				<img src="img/bat-cat.png">
+			</button>
+			<button class="btn-cat" id="btn4" type="submit" onclick="changeCat(3)">
+				<img src="img/dog.png">
+			</button>
+			<button class="btn-cat" id="btn5" type="submit" onclick="changeCat(4)">
+				<img src="img/reindeer.png">
+			</button>
+			<button class="btn-cat" id="btn6" type="submit" onclick="changeCat(5)">
+				<img src="img/robot.png">
+			</button>
+			<button class="btn-cat" id="btn7" type="submit" onclick="changeCat(6)">
+				<img src="img/sheep.png">
+			</button>
+			<div class="slidecontainer">
+				<input type="range" min="16" max="128" value="32" class="slider" id="myRange">
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
